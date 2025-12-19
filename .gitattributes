@@ -1,0 +1,7 @@
+# Ensure consistent EOL and mark binary
+* text=auto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary

@@ -1,0 +1,14 @@
+# Generic Lovable manifest to help automated import tools
+# Adjust fields to Lovable's exact spec if they require different keys.
+name: No-BS-Sales-Enablement_V2
+build:
+  method: docker
+  dockerfile: Dockerfile
+  context: .
+image:
+  repository: ghcr.io/heath-gtm/no-bs-sales-enablement_v2
+  tag: latest
+notes: |
+  This manifest instructs Lovable (or similar platforms) to build using the
+  repository root `Dockerfile`. If you want CI to publish images, enable
+  a workflow that pushes to GHCR or Docker Hub and update `image.repository`.
